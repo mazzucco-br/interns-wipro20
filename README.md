@@ -37,6 +37,7 @@ api
     search
 </pre>
 ## TODO
+<pre>
 Log all events to log microservice
   - Interface Logable
 H2DB
@@ -46,5 +47,5 @@ Add user_id header
 BeanValidation
 ExceptionHandling 
 Security
-
+</pre>
 
