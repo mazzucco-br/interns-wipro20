@@ -38,13 +38,22 @@ api
 </pre>
 ## TODO
 <pre>
+- testes de integração (rest) com SpringBoot
+- um teste sucesso
+	- validar status code 200
+- um teste de erro com nenhum campo informado
+	- validar status code 400
+	- validar mensagem para cada campo requerido
+
 Log all events to log microservice
   - Interface Logable
-H2DB
+H2DB - configurar banco de memória
 Swagger
-RequestId
-Add user_id header
+Generate RequestId
+Add user_id to header
 BeanValidation
+  adicionar validações para os campos de requisição
+  vide https://docs.oracle.com/javaee/6/tutorial/doc/gircz.html
 ExceptionHandling 
 Security
 </pre>
