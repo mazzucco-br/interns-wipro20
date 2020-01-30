@@ -1,28 +1,28 @@
 # interns-wipro20
 
 ## users-api
-
-api	
-	user
-		create (POST /users)
-			UserCreateControler
-			UserCreateService
-			UserCreateRequest
-			UserCreateResponse
-		update (PUT /users/{id})
-		detail (GET /users/{id})
-		list (GET /users) - filter and pagination
-		delete (DELETE /users/{id})
-	role
-		create
-			RoleCreateControler
-			RoleCreateService
-			RoleCreateRequest
-			RoleCreateResponse
-		update
-		detail
-		list
-		delete
+<pre>
+api  
+  user
+    create (POST /users)
+      UserCreateControler
+      UserCreateService
+      UserCreateRequest
+      UserCreateResponse
+    update (PUT /users/{id})
+    detail (GET /users/{id})
+    list (GET /users) - filter and pagination
+    delete (DELETE /users/{id})
+  role
+    create
+      RoleCreateControler
+      RoleCreateService
+      RoleCreateRequest
+      RoleCreateResponse
+    update
+    detail
+    list
+    delete
 domain
   user
     User
@@ -30,12 +30,12 @@ domain
   role
     Role
     RoleRepository
-## logs-api		
+## logs-api    
 api
   log
     create
     search
-
+</pre>
 ## TODO
 Log all events to log microservice
   - Interface Logable
