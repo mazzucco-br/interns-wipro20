@@ -1,6 +1,7 @@
 # interns-wipro20
 
 ## users-api
+Identity Microservice to make operations related to Users
 <pre>
 api  
   user
@@ -32,13 +33,17 @@ domain
       id
       name
     RoleRepository
+</pre>
+
 ## logs-api
+Log Microservice to write logs received through the API
+<pre>
 api
   log
     create
     search
-    
-</pre>
+</pre>    
+
 ## TODO
 <pre>
 
