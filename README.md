@@ -4,7 +4,7 @@
 Identity Microservice to make operations related to Users
 <pre>
 api  
-  user
+  users
     create (POST /users)
       UserCreateControler
       UserCreateService
@@ -14,7 +14,7 @@ api
     detail (GET /users/{id})
     list (GET /users) - filter and pagination
     delete (DELETE /users/{id})
-  role
+  roles
     create
       RoleCreateControler
       RoleCreateService
@@ -39,7 +39,7 @@ domain
 Log Microservice to write logs received through the API
 <pre>
 api
-  log
+  logs
     create
     search
 </pre>    
