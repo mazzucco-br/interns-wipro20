@@ -5,34 +5,60 @@ Identity Microservice to make operations related to Users
 <pre>
 api  
   users
+    common
+      UsersMapper
+        User toUsers(UsersDto user);
+	UsersDto toUsersDto(User user);
+      UsersDto
+        id
+        email
+        firstName
+        lastName
+        birthDate
+        roles
     create (POST /users)
-      UserCreateControler
-      UserCreateService
-      UserCreateRequest
-      UserCreateResponse
+      UsersCreateController
+      UsersCreateService
+      UsersCreateRequest extends UsersDto
+      UsersCreateResponse extends UsersDto
     update (PUT /users/{id})
+      UsersUpdateController
+      UsersUpdateService
+      UsersUpdateRequest extends UsersDto
+      UsersUpdateResponse extends UsersDto
     detail (GET /users/{id})
+      UsersDetailController
+      UsersDetailService
+      UsersDetailResponse extends UserDto
     list (GET /users) - filter and pagination
     delete (DELETE /users/{id})
   roles
-    create
-      RoleCreateControler
+    create (POST /roles)
+      RoleCreateController
       RoleCreateService
       RoleCreateRequest
       RoleCreateResponse
-    update
-    detail
-    list
-    delete
+    update (PUT /roles/{id})
+    detail (GET /roles/{id})
+    list (GET /roles)
+    delete (DELETE /roles/{id})
 domain
   user
     User
-    UserRepository    
+      id
+      email
+      firstName
+      lastName
+      birthDate
+      roles
+    UserRepository
   role
     Role
       id
       name
     RoleRepository
+common
+  exception
 </pre>
 
 ## logs-api
@@ -40,8 +66,14 @@ Log Microservice to write logs received through the API
 <pre>
 api
   logs
-    create
-    search
+    create (POST /logs)
+    search (POST /logs/search)
+      LogsSearchRequest
+        queryParams
+	  field
+	  value
+	
+	
 </pre>    
 
 ## TODO
