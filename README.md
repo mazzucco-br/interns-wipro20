@@ -69,11 +69,13 @@ api
     create (POST /logs)
     search (POST /logs/search)
       LogsSearchRequest
+        page
+	pageSize
+	orderField
+	orderDirection
         queryParams
 	  field
 	  value
-	
-	
 </pre>    
 
 ## TODO
